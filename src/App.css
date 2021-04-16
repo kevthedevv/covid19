@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    background-color: #20222E;
+    height: 100vh;
+    width: 100%;
+    color: #ECECEC;
+}
+.app{
+    
+}
+.container{
+    max-width: 80%;
+    margin: auto;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+/*Header*/
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Content*/
+.content-container{
+   
+    height: 750px;
+    display: grid;
+    grid-template-areas: "topProvinceCity cases"
+                        "topRegion graph";
+    justify-content: left;
+    grid-gap: 2rem;
+}
+.content-topProvinceCity{
+    grid-area: topProvinceCity;
+    border: white solid 1px;
+}
+.content-cases{
+    grid-area: cases;
+    border: white solid 1px;
+}
+.content-topRegion{
+    grid-area: topRegion;
+}
+.content-graph{
+    grid-area: graph;
+    border: white solid 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Search*/
+/*Cases*/
+/*Graph*/
+/*TopProvinceCity*/
+/*TopRegion*/
+.topRegion-table-container{
+    width: 100%;
 }
+#regions td, #regions th {
+    border-top: 1px solid #474747;
+    padding: 12px;
+}
+#regions tr:hover {background-color: #474747;}  
+/*Footer*/
